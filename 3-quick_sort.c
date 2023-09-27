@@ -89,4 +89,3 @@ void quick_sort(int *array, size_t size)
 
 	lomuto_sort(array, size, 0, size - 1);
 }
-
