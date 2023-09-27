@@ -1,18 +1,14 @@
 #include "sort.h"
 
-void swap_ints(int *a, int *b);
-int lomuto_partition(int *array, size_t size, int left, int right);
-void lomuto_sort(int *array, size_t size, int left, int right);
-void quick_sort(int *array, size_t size);
-
 /**
- * swap_ints - Swap two integers.
+ * swap_ints - Swaps two integers.
  * @a: The first integer.
  * @b: The second integer.
  */
 void swap_ints(int *a, int *b)
 {
 	int tmp;
+
 	tmp = *a;
 	*a = *b;
 	*b = tmp;
@@ -55,7 +51,7 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 }
 
 /**
- * lomuto_sort - Implement quicksort algorithm.
+ * lomuto_sort - Implements quicksort algorithm.
  * @array: Array of integers to sort.
  * @size: Size of the array.
  * @left: Starting index of the partition.
@@ -76,7 +72,7 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 }
 
 /**
- * quick_sort - Sort an array of integers in ascending order using quicksort.
+ * quick_sort - Sorts an array of integers in ascending order using quicksort.
  * @array: Array of integers.
  * @size: Size of the array.
  *
